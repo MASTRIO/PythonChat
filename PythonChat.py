@@ -18,11 +18,11 @@ window = sg.Window('PythonChat - Message Input', layout)
 while True:
     if has_join_marked == False:
         has_join_marked = True
-        sg.Print(display_name, 'has joined the chat', do_not_reroute_stdout=False, no_button=True, grab_anywhere=True)
+        sg.Print('[', display_name,']' , 'has joined the chat', do_not_reroute_stdout=False, no_button=True, grab_anywhere=True)
     event, values = window.read()
     # Runs when program is closed
     if event == sg.WIN_CLOSED or event == 'Close':
-        print(display_name, 'has left the chat')
+        print('[', display_name,']' , 'has left the chat')
         time.sleep(1)
         break
     # Runs when OK is pressed
