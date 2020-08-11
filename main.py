@@ -3,7 +3,7 @@ import PySimpleGUI as sg
 import time
 
 # Variables
-display_name = 'HaydenC'
+display_name = 'Test_Subject #001'
 has_join_marked = False
 
 sg.theme('Green')
@@ -13,7 +13,7 @@ layout = [  [sg.Text('What do you want to say?')],
             [sg.Button('Ok'), sg.Button('Close')] ]
 
 # Create the Message Input gui
-window = sg.Window('Discord 2.0 - Message Input', layout)
+window = sg.Window('PythonChat - Message Input', layout)
 # Runs events when specific buttons are pressed
 while True:
     if has_join_marked == False:
